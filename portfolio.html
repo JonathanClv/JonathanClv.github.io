@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestandsupload en -download</title>
+</head>
+<body>
+    <h1>Bestandsupload en -download</h1>
+
+    <!-- Formulier voor bestandsupload -->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Selecteer een bestand:</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit" name="upload">Uploaden</button>
+    </form>
+
+    <!-- Lijst met geüploade bestanden -->
+    <h2>Geüploade bestanden:</h2>
+    <ul>
+        <?php
+            $files = scandir("uploads/");
+            foreach ($files as $file) {
+                if ($file != "." && $file != "..") {
+                    echo "<li><a href='download.php?file=$file'>$file</a></li>";
+                }
+            }
+        ?>
+    </ul>
+</body>
+</html>
