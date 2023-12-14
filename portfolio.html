@@ -3,30 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="index.html">home</a>
-    <title>Bestandsupload en -download</title>
+    <title>File Upload and Download</title>
 </head>
 <body>
-    <h1>Bestandsupload en -download</h1>
+    <h1>File Upload and Download</h1>
 
-    <!-- Formulier voor bestandsupload -->
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label for="file">Selecteer een bestand:</label>
-        <input type="file" name="file" id="file" required>
-        <button type="submit" name="upload">Uploaden</button>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
     </form>
 
-    <!-- Lijst met geüploade bestanden -->
-    <h2>Geüploade bestanden:</h2>
+    <h2>Uploaded Files:</h2>
     <ul>
-        <?php
-            $files = scandir("uploads/");
-            foreach ($files as $file) {
-                if ($file != "." && $file != "..") {
-                    echo "<li><a href='download.php?file=$file'>$file</a></li>";
-                }
-            }
-        ?>
+        {% for file in file_list %}
+            <li><a href="{{ url_for('download', filename=file) }}">{{ file }}</a></li>
+        {% endfor %}
     </ul>
 </body>
 </html>
