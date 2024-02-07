@@ -1,15 +1,11 @@
 <?php
-$uploadDir = 'uploads/';
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $bestandsnaam = $_FILES['bestand']['name'];
-    $bestandslocatie = $uploadDir . $bestandsnaam;
-
-    if (move_uploaded_file($_FILES['bestand']['tmp_name'], $bestandslocatie)) {
-        header("Location: index.html");
-        exit();
+if(isset($_POST['submit'])) {
+    $target_dir = "uploads/";
+    $target_file = $target_dir . basename($_FILES["file"]["name"]);
+    if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
+        echo "Het bestand " . htmlspecialchars(basename($_FILES["file"]["name"])) . " is geüpload.";
     } else {
-        echo "Fout bij het uploaden van het bestand.";
+        echo "Sorry, er was een probleem bij het uploaden van het bestand.";
     }
 }
 ?>
