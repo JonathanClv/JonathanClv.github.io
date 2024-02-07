@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bestand Uploaden/Downloaden</title>
+    <title>Bestandsupload</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bestand Uploaden</h1>
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="bestand" required>
-        <button type="submit">Uploaden</button>
-    </form>
+    <div class="container">
+        <h2>Bestandsupload</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" class="inputfile">
+            <label for="file">Kies een bestand</label>
+            <button type="submit" name="submit">Uploaden</button>
+        </form>
 
-    <h2>Geüploade Bestanden</h2>
-    <ul>
-        <!-- De geüploade bestanden zullen hier worden weergegeven -->
-        <?php
-        $uploadDir = 'uploads';
-        $bestanden = scandir($uploadDir);
-        foreach ($bestanden as $bestand) {
-            if ($bestand != "." && $bestand != "..") {
-                echo "<li><a href='download.php?bestand=$bestand'>$bestand</a></li>";
-            }
-        }
-        ?>
-    </ul>
+        <h2>Geüploade bestanden</h2>
+        <ul>
+            <?php include 'files.php'; ?>
+        </ul>
+    </div>
 </body>
 </html>
