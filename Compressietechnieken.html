@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beeld en Geluid Opslag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5em 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hoe Beeld en Geluid Worden Opgeslagen</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="computerwerking.html">Werking van de Computer</a></li>
+            <li><a href="binaire-stelsel.html">Binair Stelsel</a></li>
+            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+            <li><a href="persoonlijke-informatie.html">Over Mij</a></li>
+            <li><a href="beeld-geluid-opslag.html">Beeld en Geluid Opslag</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <h2>Opslag van Beeld</h2>
+            <p>Beelden kunnen op verschillende manieren worden opgeslagen. De twee meest voorkomende methoden zijn bitmaps en vectorafbeeldingen.</p>
+            <h3>Bitmapafbeeldingen</h3>
+            <p>Bitmapafbeeldingen bestaan uit een raster van pixels, waarbij elke pixel een specifieke kleur heeft. Voorbeelden van bitmapbestanden zijn JPEG, PNG en BMP. Bitmaps zijn ideaal voor complexe afbeeldingen zoals foto's, maar ze kunnen groot van formaat zijn en verliezen vaak kwaliteit wanneer ze worden vergroot.</p>
+            <h3>Vectorafbeeldingen</h3>
+            <p>Vectorafbeeldingen worden gemaakt met behulp van geometrische vormen zoals lijnen, cirkels en polygonen. In plaats van pixels slaan vectorafbeeldingen de mathematische beschrijvingen van vormen op. Voorbeelden van vectorbestanden zijn SVG en EPS. Vectorafbeeldingen zijn ideaal voor logo's en illustraties omdat ze zonder kwaliteitsverlies kunnen worden geschaald.</p>
+        </div>
+        <div class="section">
+            <h2>Opslag van Geluid</h2>
+            <p>Geluid wordt opgeslagen door middel van digitalisering, wat inhoudt dat analoge geluidsgolven worden omgezet in digitale data. Dit proces omvat sampling en het bepalen van de sample rate.</p>
+            <h3>Sampling en Sample Rate</h3>
+            <p>Sampling is het proces waarbij de amplitude van een geluidsgolf op regelmatige tijdsintervallen wordt gemeten. De sample rate is het aantal metingen per seconde en wordt uitgedrukt in Hertz (Hz). Hoe hoger de sample rate, hoe nauwkeuriger de digitale representatie van het geluid. Een standaard sample rate voor cd-kwaliteit is 44.1 kHz, wat betekent dat er 44,100 samples per seconde worden genomen.</p>
+        </div>
+        <div class="section">
+            <h2>Tekstcompressie</h2>
+            <p>Tekstcompressie is een techniek die wordt gebruikt om de hoeveelheid ruimte die tekst inneemt te verminderen. Dit kan worden bereikt door redundante gegevens te verwijderen of door patronen in de tekst te vervangen door kortere representaties.</p>
+            <h3>Lossless Compressie</h3>
+            <p>Bij lossless compressie blijft alle oorspronkelijke data intact en kan de originele tekst volledig worden hersteld. Voorbeelden van lossless compressiealgoritmen zijn Huffman-codering en Lempel-Ziv-Welch (LZW).</p>
+            <h3>Lossy Compressie</h3>
+            <p>Bij lossy compressie gaat een deel van de data verloren, wat resulteert in een kleinere bestandsgrootte maar ook in mogelijk verlies van kwaliteit. Lossy compressie wordt zelden gebruikt voor tekst, maar is gebruikelijk voor afbeeldingen (zoals JPEG) en audio (zoals MP3).</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Informatie Technologie. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
