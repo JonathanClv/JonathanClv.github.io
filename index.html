@@ -24,9 +24,11 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            display: flex;
+            justify-content: center; /* Center the navigation links */
         }
         nav ul li {
-            float: left;
+            display: inline; /* Change from float to inline for flexbox compatibility */
         }
         nav ul li a {
             display: block;
@@ -38,13 +40,9 @@
         nav ul li a:hover {
             background-color: #111;
         }
-        .container {
-            margin: 0 auto;
+        .main {
             padding: 20px;
-            max-width: 800px; /* Beperkt de breedte van de container */
-        }
-        .section {
-            margin: 20px; /* Voegt marge rond de sectie toe */
+            margin-left: 20px; /* Shift text slightly to the left */
         }
         footer {
             background-color: #333;
@@ -71,12 +69,12 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div class="container">
+    <div class="container main">
         <div class="section">
             <h2>Hallo!</h2>
             <p>Welkom op mijn website.</p>
         </div>
-    </div> <!-- Vergeet niet om het div element hier af te sluiten -->
+    </div>
     <footer>
         <p>&copy; 2024 Mijn Website. Alle rechten voorbehouden.</p>
     </footer>
