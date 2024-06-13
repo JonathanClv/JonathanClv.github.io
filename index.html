@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         header {
             background-color: #007bff;
@@ -18,27 +19,33 @@
         }
         nav {
             background-color: #333;
+            padding: 0.5em 0;
         }
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: center; /* Center the navigation links */
+            text-align: center;
         }
         nav ul li {
-            display: inline; /* Change from float to inline for flexbox compatibility */
+            display: inline;
+            margin-right: 15px;
         }
         nav ul li a {
-            display: block;
             color: white;
-            text-align: center;
-            padding: 14px 16px;
             text-decoration: none;
         }
         nav ul li a:hover {
-            background-color: #111;
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #007bff;
         }
         .main {
             padding: 20px;
