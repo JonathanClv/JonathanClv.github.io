@@ -1,148 +1,118 @@
-/* Stelt het lettertype, marges, opvulling, regelhoogte en achtergrondkleur voor de hele pagina in */
+/* Algemene opmaak voor de hele website */
 body {
-    font-family: Arial, sans-serif; /* Lettertype Arial */
-    margin: 0; /* Geen marges rondom de pagina */
-    padding: 0; /* Geen opvulling rondom de pagina */
-    line-height: 1.6; /* Regelhoogte van 1.6 voor leesbaarheid */
-    background-color: #f4f4f4; /* Lichtgrijze achtergrondkleur */
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-/* Stelt de stijl voor de koptekst van de pagina in */
-header {
-    background-color: #007bff; /* Blauwe achtergrondkleur */
-    color: white; /* Witte tekstkleur */
-    padding: 1em 0; /* Opvulling boven en onder van 1em */
-    text-align: center; /* Tekst gecentreerd */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduweffect onder de koptekst */
-}
-
-/* Stelt de stijl voor het navigatiemenu in */
+/* Navigatiebalk */
 nav {
-    background-color: #007bff; /* Blauwe achtergrondkleur */
-    padding: 1em; /* Opvulling rondom van 1em */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduweffect onder het menu */
+    background-color: #0044cc; /* Donkerblauw */
+    color: #fff;
+    padding: 15px 20px;
 }
 
-/* Stelt de stijl voor de ongenummerde lijst in het navigatiemenu in */
-nav ul {
-    list-style-type: none; /* Geen opsommingstekens */
-    margin: 0; /* Geen marges */
-    padding: 0; /* Geen opvulling */
-    display: flex; /* Flexbox-indeling */
-    justify-content: center; /* Elementen gecentreerd */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
 }
 
-/* Stelt de stijl voor de lijstitems in het navigatiemenu in */
-nav ul li {
-    margin: 0 15px; /* Marges aan de zijkanten van 15px */
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* Stelt de stijl voor de links in het navigatiemenu in */
-nav ul li a {
-    color: white; /* Witte tekstkleur */
-    text-decoration: none; /* Geen onderstreping */
-    padding: 8px 16px; /* Opvulling rondom van 8px boven/onder en 16px links/rechts */
-    border-radius: 4px; /* Afgeronde hoeken */
-    transition: background-color 0.3s; /* Zachte overgang voor de achtergrondkleur */
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #0044cc; /* Donkerblauw */
 }
 
-/* Stelt de stijl voor als de muis over de links in het navigatiemenu beweegt */
-nav ul li a:hover {
-    background-color: #0056b3; /* Donkerdere blauwe achtergrondkleur */
+h1 {
+    font-size: 2.5em;
 }
 
-/* Stelt de stijl voor de container van de inhoud in */
-.container {
-    max-width: 800px; /* Maximale breedte van 800px */
-    margin: 20px auto; /* Boven/onder marge van 20px en horizontaal gecentreerd */
-    padding: 20px; /* Opvulling rondom van 20px */
-    background-color: white; /* Witte achtergrondkleur */
-    border-radius: 8px; /* Afgeronde hoeken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduweffect rond de container */
-    text-align: left; /* Tekst links uitgelijnd */
-}
-
-/* Stelt de stijl voor kopteksten van niveau 2 in */
 h2 {
-    color: #007bff; /* Blauwe tekstkleur */
-    margin-bottom: 10px; /* Onder marge van 10px */
-    border-bottom: 2px solid #007bff; /* Blauwe onderstreep van 2px */
-    padding-bottom: 5px; /* Onderopvulling van 5px */
+    font-size: 2em;
 }
 
-/* Verbergt het standaard bestandsinvoerveld */
-input[type="file"] {
-    display: none; /* Niet weergeven */
+h3 {
+    font-size: 1.75em;
 }
 
-/* Stelt de stijl voor het label van het bestandsinvoerveld in */
-.inputfile + label {
-    font-size: 1em; /* Lettergrootte van 1em */
-    font-weight: 600; /* Dikke tekst */
-    color: white; /* Witte tekstkleur */
-    background-color: #007bff; /* Blauwe achtergrondkleur */
-    padding: 10px 15px; /* Opvulling van 10px boven/onder en 15px links/rechts */
-    border-radius: 4px; /* Afgeronde hoeken */
-    cursor: pointer; /* Wijzig cursor naar handje */
-    display: inline-block; /* Weergeven als blok in lijn */
-    transition: background-color 0.3s; /* Zachte overgang voor de achtergrondkleur */
-}
-
-/* Stelt de stijl in voor als de muis over het label van het bestandsinvoerveld beweegt */
-.inputfile + label:hover {
-    background-color: #0056b3; /* Donkerdere blauwe achtergrondkleur */
-}
-
-/* Stelt de stijl voor knoppen in */
-button {
-    margin-top: 10px; /* Boven marge van 10px */
-    padding: 10px 15px; /* Opvulling van 10px boven/onder en 15px links/rechts */
-    border: none; /* Geen rand */
-    background-color: #007bff; /* Blauwe achtergrondkleur */
-    color: white; /* Witte tekstkleur */
-    font-size: 1em; /* Lettergrootte van 1em */
-    font-weight: 600; /* Dikke tekst */
-    border-radius: 4px; /* Afgeronde hoeken */
-    cursor: pointer; /* Wijzig cursor naar handje */
-    transition: background-color 0.3s; /* Zachte overgang voor de achtergrondkleur */
-}
-
-/* Stelt de stijl in voor als de muis over de knop beweegt */
-button:hover {
-    background-color: #0056b3; /* Donkerdere blauwe achtergrondkleur */
-}
-
-/* Stelt de stijl voor ongenummerde lijsten in */
-ul {
-    list-style-type: none; /* Geen opsommingstekens */
-    padding: 0; /* Geen opvulling */
-}
-
-/* Stelt de stijl voor lijstitems in */
-li {
-    margin-top: 10px; /* Boven marge van 10px */
-}
-
-/* Stelt de stijl voor links in */
+/* Links */
 a {
-    text-decoration: none; /* Geen onderstreping */
-    color: #007bff; /* Blauwe tekstkleur */
-    transition: color 0.3s; /* Zachte overgang voor de tekstkleur */
+    color: #0066ff; /* Blauw */
+    text-decoration: none;
 }
 
-/* Stelt de stijl in voor als de muis over links beweegt */
 a:hover {
-    color: #0056b3; /* Donkerdere blauwe tekstkleur */
+    text-decoration: underline;
 }
 
-/* Stelt de stijl voor de voettekst in */
+/* Knoppen */
+button, .button {
+    background-color: #0044cc; /* Donkerblauw */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: #003399; /* Donkerdere blauw */
+}
+
+/* Voettekst */
 footer {
-    background-color: #007bff; /* Blauwe achtergrondkleur */
-    color: white; /* Witte tekstkleur */
-    text-align: center; /* Tekst gecentreerd */
-    padding: 10px 0; /* Opvulling boven en onder van 10px */
-    position: fixed; /* Vast aan de onderkant van de pagina */
-    bottom: 0; /* Gepositioneerd aan de onderkant */
-    width: 100%; /* Volledige breedte */
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Schaduweffect boven de voettekst */
+    background-color: #003399; /* Donkerdere blauw */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Containers en secties */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-blue {
+    background-color: #e6f0ff; /* Lichtblauw */
+}
+
+/* Formulieren */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #0044cc; /* Donkerblauw */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #003399; /* Donkerdere blauw */
 }
