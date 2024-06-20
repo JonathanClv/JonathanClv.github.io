@@ -1,125 +1,148 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kleurmodellen en Pixels</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            padding: 0.5em 0;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        h2 {
-            margin-bottom: 10px;
-        }
-        input[type="file"] {
-            display: none;
-        }
-        .inputfile + label {
-            font-size: 1.25em;
-            font-weight: 700;
-            color: white;
-            background-color: #007bff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: inline-block;
-        }
-        button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            font-size: 1.25em;
-            font-weight: 700;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-top: 10px;
-        }
-        a {
-            text-decoration: none;
-            color: #007bff;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Kleurmodellen en Pixels</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="computerwerking.html">Werking van een Computer</a></li>
-            <li><a href="compressietechnieken.html">Compressietechnieken</a></li>
-            <li><a href="binaire-stelsel.html">Binair Stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="section">
-            <h2>RGB Kleurmodel</h2>
-            <p>Het RGB kleurmodel wordt gebruikt voor het weergeven van kleuren op digitale schermen. RGB staat voor Rood, Groen, en Blauw. Door deze drie kleuren in verschillende intensiteiten te combineren, kunnen miljoenen verschillende kleuren worden gemaakt.</p>
-            <p>Elke kleur in het RGB-model wordt weergegeven als een combinatie van de drie basiskleuren. Bijvoorbeeld, de kleur wit wordt gemaakt door de maximale intensiteit van rood, groen, en blauw te combineren (255, 255, 255).</p>
-        </div>
-        <div class="section">
-            <h2>CMY-K Kleurmodel</h2>
-            <p>Het CMY-K kleurmodel wordt gebruikt voor kleurendruk. CMY-K staat voor Cyaan, Magenta, Geel (Yellow), en Key (Zwart). In dit model worden kleuren gemaakt door verschillende hoeveelheden van deze vier inkten te combineren.</p>
-            <p>Het belangrijkste verschil tussen RGB en CMY-K is dat RGB additief is (kleuren worden gemaakt door licht toe te voegen) en CMY-K subtractief is (kleuren worden gemaakt door licht te absorberen).</p>
-        </div>
-        <div class="section">
-            <h2>Pixels en Resolutie</h2>
-            <p>Een pixel is het kleinste element van een digitale afbeelding. Een beeldscherm is opgebouwd uit miljoenen pixels, die elk een specifieke kleur hebben. De resolutie van een beeldscherm of afbeelding geeft aan hoeveel pixels er in een bepaalde ruimte zijn, meestal uitgedrukt als breedte x hoogte (bijvoorbeeld 1920x1080).</p>
-            <p>Hoe hoger de resolutie, hoe meer details een afbeelding kan weergeven. Dit komt omdat er meer pixels zijn om de afbeelding te vormen, wat resulteert in een scherper beeld.</p>
-        </div>
-        <div class="section">
-            <p>Voor meer informatie over de kleurmodellen, bezoek de volgende link: <a href="https://www.youtube.com/watch?v=cKaRxd6tdHY" target="_blank">Color Models.</a></p>
-        </div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Mijn Website. Alle rechten voorbehouden.</p>
-    </footer>
-</body>
-</html>
+/* Stelt het lettertype, marges, opvulling, regelhoogte en achtergrondkleur voor de hele pagina in */
+body {
+    font-family: Arial, sans-serif; /* Lettertype Arial */
+    margin: 0; /* Geen marges rondom de pagina */
+    padding: 0; /* Geen opvulling rondom de pagina */
+    line-height: 1.6; /* Regelhoogte van 1.6 voor leesbaarheid */
+    background-color: #f4f4f4; /* Lichtgrijze achtergrondkleur */
+}
+
+/* Stelt de stijl voor de koptekst van de pagina in */
+header {
+    background-color: #007bff; /* Blauwe achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    padding: 1em 0; /* Opvulling boven en onder van 1em */
+    text-align: center; /* Tekst gecentreerd */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduweffect onder de koptekst */
+}
+
+/* Stelt de stijl voor het navigatiemenu in */
+nav {
+    background-color: #007bff; /* Blauwe achtergrondkleur */
+    padding: 1em; /* Opvulling rondom van 1em */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduweffect onder het menu */
+}
+
+/* Stelt de stijl voor de ongenummerde lijst in het navigatiemenu in */
+nav ul {
+    list-style-type: none; /* Geen opsommingstekens */
+    margin: 0; /* Geen marges */
+    padding: 0; /* Geen opvulling */
+    display: flex; /* Flexbox-indeling */
+    justify-content: center; /* Elementen gecentreerd */
+}
+
+/* Stelt de stijl voor de lijstitems in het navigatiemenu in */
+nav ul li {
+    margin: 0 15px; /* Marges aan de zijkanten van 15px */
+}
+
+/* Stelt de stijl voor de links in het navigatiemenu in */
+nav ul li a {
+    color: white; /* Witte tekstkleur */
+    text-decoration: none; /* Geen onderstreping */
+    padding: 8px 16px; /* Opvulling rondom van 8px boven/onder en 16px links/rechts */
+    border-radius: 4px; /* Afgeronde hoeken */
+    transition: background-color 0.3s; /* Zachte overgang voor de achtergrondkleur */
+}
+
+/* Stelt de stijl voor als de muis over de links in het navigatiemenu beweegt */
+nav ul li a:hover {
+    background-color: #0056b3; /* Donkerdere blauwe achtergrondkleur */
+}
+
+/* Stelt de stijl voor de container van de inhoud in */
+.container {
+    max-width: 800px; /* Maximale breedte van 800px */
+    margin: 20px auto; /* Boven/onder marge van 20px en horizontaal gecentreerd */
+    padding: 20px; /* Opvulling rondom van 20px */
+    background-color: white; /* Witte achtergrondkleur */
+    border-radius: 8px; /* Afgeronde hoeken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduweffect rond de container */
+    text-align: left; /* Tekst links uitgelijnd */
+}
+
+/* Stelt de stijl voor kopteksten van niveau 2 in */
+h2 {
+    color: #007bff; /* Blauwe tekstkleur */
+    margin-bottom: 10px; /* Onder marge van 10px */
+    border-bottom: 2px solid #007bff; /* Blauwe onderstreep van 2px */
+    padding-bottom: 5px; /* Onderopvulling van 5px */
+}
+
+/* Verbergt het standaard bestandsinvoerveld */
+input[type="file"] {
+    display: none; /* Niet weergeven */
+}
+
+/* Stelt de stijl voor het label van het bestandsinvoerveld in */
+.inputfile + label {
+    font-size: 1em; /* Lettergrootte van 1em */
+    font-weight: 600; /* Dikke tekst */
+    color: white; /* Witte tekstkleur */
+    background-color: #007bff; /* Blauwe achtergrondkleur */
+    padding: 10px 15px; /* Opvulling van 10px boven/onder en 15px links/rechts */
+    border-radius: 4px; /* Afgeronde hoeken */
+    cursor: pointer; /* Wijzig cursor naar handje */
+    display: inline-block; /* Weergeven als blok in lijn */
+    transition: background-color 0.3s; /* Zachte overgang voor de achtergrondkleur */
+}
+
+/* Stelt de stijl in voor als de muis over het label van het bestandsinvoerveld beweegt */
+.inputfile + label:hover {
+    background-color: #0056b3; /* Donkerdere blauwe achtergrondkleur */
+}
+
+/* Stelt de stijl voor knoppen in */
+button {
+    margin-top: 10px; /* Boven marge van 10px */
+    padding: 10px 15px; /* Opvulling van 10px boven/onder en 15px links/rechts */
+    border: none; /* Geen rand */
+    background-color: #007bff; /* Blauwe achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    font-size: 1em; /* Lettergrootte van 1em */
+    font-weight: 600; /* Dikke tekst */
+    border-radius: 4px; /* Afgeronde hoeken */
+    cursor: pointer; /* Wijzig cursor naar handje */
+    transition: background-color 0.3s; /* Zachte overgang voor de achtergrondkleur */
+}
+
+/* Stelt de stijl in voor als de muis over de knop beweegt */
+button:hover {
+    background-color: #0056b3; /* Donkerdere blauwe achtergrondkleur */
+}
+
+/* Stelt de stijl voor ongenummerde lijsten in */
+ul {
+    list-style-type: none; /* Geen opsommingstekens */
+    padding: 0; /* Geen opvulling */
+}
+
+/* Stelt de stijl voor lijstitems in */
+li {
+    margin-top: 10px; /* Boven marge van 10px */
+}
+
+/* Stelt de stijl voor links in */
+a {
+    text-decoration: none; /* Geen onderstreping */
+    color: #007bff; /* Blauwe tekstkleur */
+    transition: color 0.3s; /* Zachte overgang voor de tekstkleur */
+}
+
+/* Stelt de stijl in voor als de muis over links beweegt */
+a:hover {
+    color: #0056b3; /* Donkerdere blauwe tekstkleur */
+}
+
+/* Stelt de stijl voor de voettekst in */
+footer {
+    background-color: #007bff; /* Blauwe achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    text-align: center; /* Tekst gecentreerd */
+    padding: 10px 0; /* Opvulling boven en onder van 10px */
+    position: fixed; /* Vast aan de onderkant van de pagina */
+    bottom: 0; /* Gepositioneerd aan de onderkant */
+    width: 100%; /* Volledige breedte */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Schaduweffect boven de voettekst */
+}
