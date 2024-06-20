@@ -1,97 +1,112 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kleurmodellen en Pixels</title>
+    <!-- Informatie over de pagina -->
+    <meta charset="UTF-8"> <!-- Stelt de tekenset in -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt ervoor dat de pagina goed werkt op mobiele telefoons -->
+    <title>Kleurmodellen en Pixels</title> <!-- Titel van de pagina -->
     <style>
+        /* Stijlregels voor de pagina */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif; /* Het lettertype van de tekst is Arial */
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.6; /* De afstand tussen de regels*/
         }
+        /* Stijl voor het bovenste gedeelte van de pagina */
         header {
-            background-color: #007bff;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
+            background-color: #007bff; /* De achtergrondkleur is blauw */
+            color: white; /* De tekstkleur is wit */
+            padding: 1em 0; /* Ruimte boven en onder de tekst in de header */
+            text-align: center; /* De tekst in de header is in het midden geplaatst */
         }
+        /* Stijl voor de menubalk */
         nav {
-            background-color: #333;
-            padding: 0.5em 0;
+            background-color: #333; /* De achtergrondkleur is donkergrijs */
+            padding: 0.5em 0; /* Ruimte boven en onder de tekst in de menubalk */
         }
         nav ul {
-            list-style-type: none;
+            list-style-type: none; /* Geen opsommingstekens bij de lijst */
             margin: 0;
             padding: 0;
-            text-align: center;
+            text-align: center; /* De lijst staat in het midden */
         }
         nav ul li {
-            display: inline;
-            margin-right: 15px;
+            display: inline; /* De lijstitems staan naast elkaar */
+            margin-right: 15px; /* Ruimte tussen de lijstitems */
         }
         nav ul li a {
-            color: white;
-            text-decoration: none;
+            color: white; /* De kleur van de link is wit */
+            text-decoration: none; /* Geen onderstreping bij de link */
         }
         nav ul li a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Onderstreping bij de link als je er met de muis overheen gaat */
         }
+        /* Stijl voor het deel van de pagina waar de belangrijkste inhoud staat */
         .container {
-            padding: 20px;
+            padding: 20px; /* Ruimte rondom de inhoud */
         }
+        /* Stijl voor elk deel in de container */
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Ruimte onder elk deel */
         }
         .section h2 {
-            color: #007bff;
+            color: #007bff; /* Kleur van de koppen in de delen is blauw */
          }
+        /* Stijl voor het hoofdgedeelte */
         .main {
-            padding: 20px;
-            margin-left: 20px; /* Shift text slightly to the left */
+            padding: 20px; /* Ruimte rondom het hoofdgedeelte */
+            margin-left: 20px; /* Verschuift de tekst een beetje naar links */
         }
+        /* Stijl voor de onderste balk van de pagina */
         footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
+            background-color: #333; /* De achtergrondkleur is donkergrijs */
+            color: white; /* De tekstkleur is wit */
+            text-align: center; /* De tekst in de onderste balk is in het midden geplaatst */
+            padding: 10px 0; /* Ruimte boven en onder de tekst in de onderste balk */
+            position: fixed; /* De onderste balk blijft altijd onderaan de pagina */
             bottom: 0;
-            width: 100%;
+            width: 100%; /* De breedte is 100% van de pagina */
         }
     </style>
 </head>
 <body>
+    <!-- Bovenste gedeelte van de pagina -->
     <header>
         <h1>Kleurmodellen en Pixels</h1>
     </header>
+    <!-- Menubalk -->
     <nav>
         <ul>
-         <li><a href="index.html">Home</a></li>
-            <li><a href="computerwerking.html">Werking van een Computer</a></li>
-            <li><a href="compressietechnieken.html">Compressietechnieken</a></li>
-            <li><a href="binaire-stelsel.html">Binair Stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li> <!-- Link naar de homepagina -->
+            <li><a href="computerwerking.html">Werking van een Computer</a></li> <!-- Link naar de pagina over de werking van een computer -->
+            <li><a href="compressietechnieken.html">Compressietechnieken</a></li> <!-- Link naar de pagina over compressietechnieken -->
+            <li><a href="binaire-stelsel.html">Binair Stelsel</a></li> <!-- Link naar de pagina over het binaire stelsel -->
+            <li><a href="kleurmodellen.html">Kleurmodellen</a></li> <!-- Link naar de pagina over kleurmodellen -->
+            <li><a href="contact.html">Contact</a></li> <!-- Link naar de contactpagina -->
         </ul>
     </nav>
+    <!-- Container voor de belangrijkste inhoud -->
     <div class="container">
+        <!-- Sectie over het RGB kleurmodel -->
         <div class="section">
             <h2>RGB Kleurmodel</h2>
             <p>Het RGB kleurmodel wordt gebruikt voor het weergeven van kleuren op digitale schermen. RGB staat voor Rood, Groen, en Blauw. Door deze drie kleuren in verschillende intensiteiten te combineren, kunnen miljoenen verschillende kleuren worden gemaakt.</p>
             <p>Elke kleur in het RGB-model wordt weergegeven als een combinatie van de drie basiskleuren. Bijvoorbeeld, de kleur wit wordt gemaakt door de maximale intensiteit van rood, groen, en blauw te combineren (255, 255, 255).</p>
         </div>
+        <!-- Sectie over het CMY-K kleurmodel -->
         <div class="section">
             <h2>CMY-K Kleurmodel</h2>
             <p>Het CMY-K kleurmodel wordt gebruikt voor kleurendruk. CMY-K staat voor Cyaan, Magenta, Geel (Yellow), en Key (Zwart). In dit model worden kleuren gemaakt door verschillende hoeveelheden van deze vier inkten te combineren.</p>
             <p>Het belangrijkste verschil tussen RGB en CMY-K is dat RGB additief is (kleuren worden gemaakt door licht toe te voegen) en CMY-K subtractief is (kleuren worden gemaakt door licht te absorberen).</p>
         </div>
+        <!-- Sectie over pixels en resolutie -->
         <div class="section">
             <h2>Pixels en Resolutie</h2>
             <p>Een pixel is het kleinste element van een digitale afbeelding. Een beeldscherm is opgebouwd uit miljoenen pixels, die elk een specifieke kleur hebben. De resolutie van een beeldscherm of afbeelding geeft aan hoeveel pixels er in een bepaalde ruimte zijn, meestal uitgedrukt als breedte x hoogte (bijvoorbeeld 1920x1080).</p>
             <p>Hoe hoger de resolutie, hoe meer details een afbeelding kan weergeven. Dit komt omdat er meer pixels zijn om de afbeelding te vormen, wat resulteert in een scherper beeld.</p>
         </div>
+        <!-- Sectie met een link naar meer informatie -->
         <div class="section">
             <p>Voor meer informatie over de kleurmodellen, bezoek de volgende link: <a href="https://www.youtube.com/watch?v=cKaRxd6tdHY" target="_blank">Color Models.</a></p>
         </div>
