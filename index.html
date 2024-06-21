@@ -6,67 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt ervoor dat de pagina goed werkt op mobiele telefoons -->
     <title>Homepagina</title> <!-- Titel van de pagina -->
     <style>
-        /* Stijlregels voor de pagina */
-        body {
-            font-family: Arial, sans-serif; /* Het lettertype van de tekst is Arial */
+        /* Algemene opmaak voor de hele website */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Het lettertype van de tekst is Arial */
+            background-color: #f4f4f4; /* Achtergrondkleur van de pagina */
+            color: #333; /* Kleur van de tekst */
             line-height: 1.6; /* De afstand tussen de regels */
         }
+
         /* Stijl voor het bovenste gedeelte van de pagina */
         header {
             background-color: #007bff; /* De achtergrondkleur is blauw */
             color: white; /* De tekstkleur is wit */
-            padding: 1em 0; /* Ruimte boven en onder de tekst in de header */
+            padding: 1.5em 0; /* Ruimte boven en onder de tekst in de header */
             text-align: center; /* De tekst in de header is in het midden geplaatst */
         }
+
+        header h1 {
+            margin: 0; /* Geen marge rondom de koptekst */
+            font-size: 2.5em; /* Grotere lettergrootte voor de koptekst */
+        }
+
         /* Stijl voor de menubalk */
         nav {
             background-color: #333; /* De achtergrondkleur is donkergrijs */
-            padding: 0.5em 0; /* Ruimte boven en onder de tekst in de menubalk */
+            padding: 1em 0; /* Ruimte boven en onder de tekst in de menubalk */
         }
+
         nav ul {
             list-style-type: none; /* Geen opsommingstekens bij de lijst */
             margin: 0;
             padding: 0;
             text-align: center; /* De lijst staat in het midden */
         }
+
         nav ul li {
             display: inline; /* De lijstitems staan naast elkaar */
-            margin-right: 15px; /* Ruimte tussen de lijstitems */
+            margin-right: 20px; /* Ruimte tussen de lijstitems */
         }
+
+        nav ul li:last-child {
+            margin-right: 0; /* Geen ruimte na het laatste lijstitem */
+        }
+
         nav ul li a {
             color: white; /* De kleur van de link is wit */
             text-decoration: none; /* Geen onderstreping bij de link */
+            font-size: 1.2em; /* Grotere lettergrootte voor de links */
+            transition: color 0.3s ease; /* Animatie voor de kleurverandering */
         }
+
         nav ul li a:hover {
-            text-decoration: underline; /* Onderstreping bij de link als je er met de muis overheen gaat */
+            color: #007bff; /* Kleurverandering bij hover */
         }
+
         /* Stijl voor het deel van de pagina waar de belangrijkste inhoud staat */
         .container {
+            max-width: 1200px; /* Max breedte van de container */
+            margin: 0 auto; /* Horizontaal centreren van de container */
             padding: 20px; /* Ruimte rondom de inhoud */
         }
+
         /* Stijl voor elk deel in de container */
         .section {
             margin-bottom: 20px; /* Ruimte onder elk deel */
+            padding: 20px; /* Ruimte binnen elk deel */
+            background: white; /* Witte achtergrond voor secties */
+            border-radius: 10px; /* Afgeronde hoeken */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Schaduw voor diepte-effect */
         }
+
         .section h2 {
             color: #007bff; /* Kleur van de koppen in de delen is blauw */
+            margin-bottom: 10px; /* Ruimte onder de kop */
         }
-        /* Stijl voor het hoofdgedeelte */
-        .main {
-            padding: 20px; /* Ruimte rondom het hoofdgedeelte */
-            margin-left: 20px; /* Verschuift de tekst een beetje naar links */
+
+        .section p {
+            font-size: 1.1em; /* Grotere lettergrootte voor paragraaftekst */
         }
-        /* Stijl voor de onderste balk van de pagina */
-        footer {
-            background-color: #333; /* De achtergrondkleur is donkergrijs */
-            color: white; /* De tekstkleur is wit */
-            text-align: center; /* De tekst in de onderste balk is in het midden geplaatst */
-            padding: 10px 0; /* Ruimte boven en onder de tekst in de onderste balk */
-            position: fixed; /* De onderste balk blijft altijd onderaan de pagina */
-            bottom: 0;
-            width: 100%; /* De breedte is 100% van de pagina */
+
+        /* Algemene knoppenstijl */
+        .btn {
+            display: inline-block; /* Inline-block weergave */
+            padding: 10px 20px; /* Ruimte binnen de knop */
+            margin-top: 10px; /* Ruimte boven de knop */
+            font-size: 1em; /* Lettergrootte */
+            color: white; /* Tekstkleur wit */
+            background-color: #007bff; /* Achtergrondkleur blauw */
+            border: none; /* Geen rand */
+            border-radius: 5px; /* Afgeronde hoeken */
+            text-decoration: none; /* Geen onderstreping */
+            text-align: center; /* Tekst centreren */
+            cursor: pointer; /* Cursor aanwijzer */
+            transition: background-color 0.3s ease; /* Animatie voor achtergrondkleurverandering */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Donkerdere blauw bij hover */
         }
     </style>
 </head>
@@ -87,7 +129,7 @@
         </ul>
     </nav>
     <!-- Container voor de belangrijkste inhoud -->
-    <div class="container main">
+    <div class="container">
         <!-- Sectie met een begroeting -->
         <div class="section">
             <h2>Hallo!</h2>
