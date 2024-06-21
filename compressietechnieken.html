@@ -57,12 +57,17 @@
 
         /* Stijl voor het deel van de pagina waar de belangrijkste inhoud staat */
         .container {
-            padding: 20px; /* Ruimte rondom de inhoud */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         /* Stijl voor elk deel in de container */
         .section {
+            padding: 40px 20px; /* Ruimte rondom elk deel */
             margin-bottom: 20px; /* Ruimte onder elk deel */
+            background-color: #e6f0ff; /* Lichtblauw */
+            border-radius: 10px; /* Afgeronde hoeken */
         }
 
         .section h2 {
@@ -125,22 +130,6 @@
 
         input[type="submit"]:hover {
             background-color: #003399; /* Donkerdere blauw */
-        }
-
-        /* Containers en secties */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .section {
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        .section-blue {
-            background-color: #e6f0ff; /* Lichtblauw */
         }
     </style>
 </head>
