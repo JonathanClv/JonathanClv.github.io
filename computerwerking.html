@@ -5,58 +5,72 @@
     <meta charset="UTF-8"> <!-- Stelt de tekenset in -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt ervoor dat de pagina goed werkt op mobiele telefoons -->
     <title>Werking van een Computer</title>
-    <style> /* Stijlregels voor de pagina */
-        body {
-            font-family: Arial, sans-serif; /* Het lettertype van de tekst is Arial */
+    <style>
+        /* Algemene opmaak voor de hele website */
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6; /* De afstand tussen de regels */
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
         /* Stijl voor het bovenste gedeelte van de pagina */
         header {
-            background-color: #007bff; /* De achtergrondkleur is blauw */
+            background-color: #0044cc; /* Donkerblauw */
             color: white; /* De tekstkleur is wit */
             padding: 1em 0; /* Ruimte boven en onder de tekst in de header */
             text-align: center; /* De tekst in de header is in het midden geplaatst */
         }
+
         /* Stijl voor de menubalk */
         nav {
             background-color: #333; /* De achtergrondkleur is donkergrijs */
             padding: 0.5em 0; /* Ruimte boven en onder de tekst in de menubalk */
         }
+
         nav ul {
             list-style-type: none; /* Geen opsommingstekens bij de lijst */
             margin: 0;
             padding: 0;
             text-align: center; /* De lijst staat in het midden */
         }
+
         nav ul li {
             display: inline; /* De lijstitems staan naast elkaar */
             margin-right: 15px; /* Ruimte tussen de lijstitems */
         }
+
         nav ul li a {
             color: white; /* De kleur van de link is wit */
             text-decoration: none; /* Geen onderstreping bij de link */
         }
+
         nav ul li a:hover {
             text-decoration: underline; /* Onderstreping bij de link als je er met de muis overheen gaat */
         }
+
         /* Stijl voor het deel van de pagina waar de belangrijkste inhoud staat */
         .container {
             padding: 20px; /* Ruimte rondom de inhoud */
+            max-width: 1200px;
+            margin: 0 auto;
         }
+
         /* Stijl voor elk deel in de container */
         .section {
             margin-bottom: 20px; /* Ruimte onder elk deel */
         }
+
         .section h2 {
-            color: #007bff; /* Kleur van de koppen in de delen is blauw */
+            color: #0044cc; /* Kleur van de koppen in de delen is blauw */
         }
-        /* Stijl voor het hoofdgedeelte */
-        .main {
-            padding: 20px; /* Ruimte rondom het hoofdgedeelte */
-            margin-left: 20px; /* Verschuift de tekst een beetje naar links */
-        }
+
         /* Stijl voor de onderste balk van de pagina */
         footer {
             background-color: #333; /* De achtergrondkleur is donkergrijs */
@@ -66,6 +80,16 @@
             position: fixed; /* De onderste balk blijft altijd onderaan de pagina */
             bottom: 0;
             width: 100%;
+        }
+
+        /* Stijl voor de links in de footer */
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -109,5 +133,9 @@
             <p>Voor meer informatie over de werking van een computer, bezoek de volgende link: <a href="https://www.youtube.com/watch?v=h4DMGxCnb9c" target="_blank">Hoe werkt een computer?</a></p>
         </div>
     </div>
+    <!-- Onderste balk van de pagina -->
+    <footer>
+        <p>&copy; 2024 Professionele Website. Alle rechten voorbehouden.</p>
+    </footer>
 </body>
 </html>
