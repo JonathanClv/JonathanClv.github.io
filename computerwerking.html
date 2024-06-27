@@ -28,10 +28,15 @@
             text-align: center; /* De tekst in de header is in het midden geplaatst */
         }
 
+        header h1 {
+            margin: 0;
+            font-size: 2.5em; /* Grotere lettergrootte voor de koptekst */
+        }
+
         /* Stijl voor de menubalk */
         nav {
             background-color: #333; /* De achtergrondkleur is donkergrijs */
-            padding: 0.5em 0; /* Ruimte boven en onder de tekst in de menubalk */
+            padding: 1em 0; /* Ruimte boven en onder de tekst in de menubalk */
         }
 
         nav ul {
@@ -43,56 +48,100 @@
 
         nav ul li {
             display: inline; /* De lijstitems staan naast elkaar */
-            margin-right: 15px; /* Ruimte tussen de lijstitems */
+            margin-right: 20px; /* Ruimte tussen de lijstitems */
+        }
+
+        nav ul li:last-child {
+            margin-right: 0; /* Geen ruimte na het laatste lijstitem */
         }
 
         nav ul li a {
             color: white; /* De kleur van de link is wit */
             text-decoration: none; /* Geen onderstreping bij de link */
+            font-size: 1.2em; /* Grotere lettergrootte voor de links */
+            transition: color 0.3s ease; /* Animatie voor de kleurverandering */
         }
 
         nav ul li a:hover {
-            text-decoration: underline; /* Onderstreping bij de link als je er met de muis overheen gaat */
+            color: #0044cc; /* Kleurverandering bij hover */
         }
 
         /* Stijl voor het deel van de pagina waar de belangrijkste inhoud staat */
         .container {
+            max-width: 1200px; /* Max breedte van de container */
+            margin: 0 auto; /* Horizontaal centreren van de container */
             padding: 20px; /* Ruimte rondom de inhoud */
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         /* Stijl voor elk deel in de container */
         .section {
             padding: 40px 20px; /* Ruimte rondom elk deel */
             margin-bottom: 20px; /* Ruimte onder elk deel */
-            background-color: #e6f0ff; /* Lichtblauw */
+            background: white; /* Witte achtergrond voor secties */
             border-radius: 10px; /* Afgeronde hoeken */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Schaduw voor diepte-effect */
         }
 
         .section h2 {
             color: #0044cc; /* Kleur van de koppen in de delen is blauw */
+            margin-bottom: 10px; /* Ruimte onder de kop */
         }
 
-        /* Stijl voor de onderste balk van de pagina */
-        footer {
-            background-color: #333; /* De achtergrondkleur is donkergrijs */
-            color: white; /* De tekstkleur is wit */
-            text-align: center; /* De tekst in de onderste balk is in het midden geplaatst */
-            padding: 10px 0; /* Ruimte boven en onder de tekst in de onderste balk */
-            position: fixed; /* De onderste balk blijft altijd onderaan de pagina */
-            bottom: 0;
-            width: 100%;
+        .section p {
+            font-size: 1.1em; /* Grotere lettergrootte voor paragraaftekst */
         }
 
-        /* Stijl voor de links in de footer */
-        footer a {
-            color: #fff;
-            text-decoration: none;
+        .section ul {
+            list-style-type: none; /* Geen opsommingstekens bij de lijst */
+            padding-left: 0; /* Geen inspringing */
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        .section ul li {
+            margin-bottom: 10px; /* Ruimte onder elk lijstitem */
+        }
+
+        /* Algemene knoppenstijl */
+        .btn {
+            display: inline-block; /* Inline-block weergave */
+            padding: 10px 20px; /* Ruimte binnen de knop */
+            margin-top: 10px; /* Ruimte boven de knop */
+            font-size: 1em; /* Lettergrootte */
+            color: white; /* Tekstkleur wit */
+            background-color: #0044cc; /* Achtergrondkleur blauw */
+            border: none; /* Geen rand */
+            border-radius: 5px; /* Afgeronde hoeken */
+            text-decoration: none; /* Geen onderstreping */
+            text-align: center; /* Tekst centreren */
+            cursor: pointer; /* Cursor aanwijzer */
+            transition: background-color 0.3s ease; /* Animatie voor achtergrondkleurverandering */
+        }
+
+        .btn:hover {
+            background-color: #003399; /* Donkerdere blauw bij hover */
+        }
+
+        /* Formulieren */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%; /* Brede velden */
+            padding: 10px; /* Ruimte binnen de velden */
+            margin: 10px 0; /* Ruimte tussen de velden */
+            border: 1px solid #ccc; /* Randkleur */
+            border-radius: 5px; /* Afgeronde hoeken */
+        }
+
+        input[type="submit"] {
+            background-color: #0044cc; /* Achtergrondkleur blauw */
+            color: white; /* Tekstkleur wit */
+            border: none; /* Geen rand */
+            padding: 10px 20px; /* Ruimte binnen de knop */
+            cursor: pointer; /* Cursor aanwijzer */
+            font-size: 1em; /* Lettergrootte */
+            border-radius: 5px; /* Afgeronde hoeken */
+            transition: background-color 0.3s ease; /* Animatie voor achtergrondkleurverandering */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003399; /* Donkerdere blauw bij hover */
         }
     </style>
 </head>
