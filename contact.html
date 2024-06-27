@@ -4,60 +4,111 @@
     <!-- Informatie over de pagina -->
     <meta charset="UTF-8"> <!-- Stelt de tekenset in -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt ervoor dat de pagina goed werkt op mobiele telefoons -->
-    <title>Persoonlijke Informatie</title> <!-- Titel van de pagina -->
+    <title>Persoonlijke Informatie</title>
     <style>
-        /* Stijlregels voor de pagina */
-        body {
-            font-family: Arial, sans-serif; /* Het lettertype van de tekst is Arial */
+        /* Algemene opmaak voor de hele website */
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6; /* De afstand tussen de regels */
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
         /* Stijl voor het bovenste gedeelte van de pagina */
         header {
-            background-color: #007bff; /* De achtergrondkleur is blauw */
+            background-color: #007bff; /* Blauw */
             color: white; /* De tekstkleur is wit */
             padding: 1em 0; /* Ruimte boven en onder de tekst in de header */
             text-align: center; /* De tekst in de header is in het midden geplaatst */
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em; /* Grotere lettergrootte voor de koptekst */
+        }
+
         /* Stijl voor de menubalk */
         nav {
             background-color: #333; /* De achtergrondkleur is donkergrijs */
-            padding: 0.5em 0; /* Ruimte boven en onder de tekst in de menubalk */
+            padding: 1em 0; /* Ruimte boven en onder de tekst in de menubalk */
         }
+
         nav ul {
             list-style-type: none; /* Geen opsommingstekens bij de lijst */
             margin: 0;
             padding: 0;
             text-align: center; /* De lijst staat in het midden */
         }
+
         nav ul li {
             display: inline; /* De lijstitems staan naast elkaar */
-            margin-right: 15px; /* Ruimte tussen de lijstitems */
+            margin-right: 20px; /* Ruimte tussen de lijstitems */
         }
+
+        nav ul li:last-child {
+            margin-right: 0; /* Geen ruimte na het laatste lijstitem */
+        }
+
         nav ul li a {
             color: white; /* De kleur van de link is wit */
             text-decoration: none; /* Geen onderstreping bij de link */
+            font-size: 1.2em; /* Grotere lettergrootte voor de links */
+            transition: color 0.3s ease; /* Animatie voor de kleurverandering */
         }
+
         nav ul li a:hover {
-            text-decoration: underline; /* Onderstreping bij de link als je er met de muis overheen gaat */
+            color: #007bff; /* Kleurverandering bij hover */
         }
+
         /* Stijl voor het deel van de pagina waar de belangrijkste inhoud staat */
         .container {
+            max-width: 1200px; /* Max breedte van de container */
+            margin: 0 auto; /* Horizontaal centreren van de container */
             padding: 20px; /* Ruimte rondom de inhoud */
         }
+
         /* Stijl voor elk deel in de container */
         .section {
+            padding: 40px 20px; /* Ruimte rondom elk deel */
             margin-bottom: 20px; /* Ruimte onder elk deel */
+            background: white; /* Witte achtergrond voor secties */
+            border-radius: 10px; /* Afgeronde hoeken */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Schaduw voor diepte-effect */
         }
+
         .section h2 {
             color: #007bff; /* Kleur van de koppen in de delen is blauw */
+            margin-bottom: 10px; /* Ruimte onder de kop */
         }
-        /* Stijl voor het hoofdgedeelte */
-        .main {
-            padding: 20px; /* Ruimte rondom het hoofdgedeelte */
-            margin-left: 20px; /* Verschuift de tekst een beetje naar links */
+
+        .section p, .section ul {
+            font-size: 1.1em; /* Grotere lettergrootte voor tekst */
         }
+
+        .section ul {
+            list-style-type: none; /* Geen opsommingstekens bij de lijst */
+            padding-left: 0; /* Geen inspringing */
+        }
+
+        .section ul li {
+            margin-bottom: 10px; /* Ruimte onder elk lijstitem */
+        }
+
+        /* Stijl voor afbeeldingen */
+        .section img {
+            max-width: 100%; /* Zorgt ervoor dat de afbeelding niet breder is dan de container */
+            height: auto; /* Behoud de verhouding van de afbeelding */
+            border-radius: 10px; /* Afgeronde hoeken */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Schaduw voor diepte-effect */
+            margin-top: 20px; /* Ruimte boven de afbeelding */
+        }
+
         /* Stijl voor de onderste balk van de pagina */
         footer {
             background-color: #333; /* De achtergrondkleur is donkergrijs */
@@ -67,6 +118,16 @@
             position: fixed; /* De onderste balk blijft altijd onderaan de pagina */
             bottom: 0;
             width: 100%; /* De breedte is 100% van de pagina */
+        }
+
+        /* Stijl voor de links in de footer */
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -106,8 +167,7 @@
         <div class="section">
             <h2>Meer Over Mijn Hobby's</h2>
             <p>Ik vind het heerlijk om tijd door te brengen met mijn vrienden. We doen allerlei leuke activiteiten samen zoals films kijken, gamen en gewoon gezellig kletsen. Daarnaast ben ik al jarenlang actief bij de scouting. Dit geeft me de kans om avontuurlijke activiteiten te ondernemen en nieuwe vaardigheden te leren. Tot slot ga ik regelmatig naar de sportschool om fit te blijven en mijn gezondheid te verbeteren.</p>
-            <img src="monkey.jpg" alt="monkey" style="width:700px;height:auto;"> <!-- Een afbeelding van een aap met een breedte van 700px en hoogte van 600px -->
         </div>
-    </div>
+    </div> 
 </body>
 </html>
