@@ -96,8 +96,13 @@
             padding-left: 0; /* Geen inspringing */
         }
 
-        .section ul li {
-            margin-bottom: 10px; /* Ruimte onder elk lijstitem */
+        .section ul.circle-list {
+            list-style-type: circle; /* Gebruik cirkels als opsommingstekens */
+            padding-left: 20px; /* Voeg wat ruimte toe aan de linkerkant */
+        }
+
+        .section ul.circle-list li {
+            margin-bottom: 10px; /* Voeg wat ruimte toe onder elk lijstitem */
         }
 
         /* Stijl voor afbeeldingen */
@@ -137,10 +142,10 @@
             <p><strong>Leeftijd:</strong> 17 jaar</p>
             <p><strong>E-mail:</strong> 111077@clv.nl</p>
             <p><strong>Hobby's:</strong></p>
-            <ul type=circle>
-           <li>Met vrienden afspreken</li>
-           <li>Scouting</li>
-           <li>Naar de sportschool gaan</li>
+            <ul class="circle-list">
+                <li>Met vrienden afspreken</li>
+                <li>Scouting</li>
+                <li>Naar de sportschool gaan</li>
             </ul>
         </div>
         <!-- Deel over hobby's -->
@@ -151,4 +156,3 @@
     </div> 
 </body>
 </html>
-
